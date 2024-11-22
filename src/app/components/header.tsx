@@ -5,7 +5,7 @@ export default function Header() {
     <nav>
       <ul className=" flex rounded bg-blue-500 p-4 space-x-4 items-center m-3">
         <li>
-          <Link href="/app">Home </Link>
+          <Link href="/">Home </Link>
         </li>
         <li>
           <br />
