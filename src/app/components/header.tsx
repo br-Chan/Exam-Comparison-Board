@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Header() {
   return (
     <nav>
-      <ul className=" flex rounded bg-blue-500 p-4 space-x-4 items-center m-3">
+      <ul className=" flex p-4 space-x-4 items-center m-3" style={{ borderRadius: '30px', backgroundColor: '#2b47a1' }}>
         <li>
           <Link href="/app">Home </Link>
         </li>
