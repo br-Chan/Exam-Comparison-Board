@@ -11,7 +11,7 @@ export default function Header() {
           <br />
         </li>
         <li>
-          <h1 className=" text-6xl font-serif font-bold">CROWDED EXAMS</h1>
+          <h1 className=" text-6xl font-lexend font-bold">CROWDED EXAMS</h1>
         </li>
       </ul>
     </nav>
