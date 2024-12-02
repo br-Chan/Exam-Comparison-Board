@@ -1,29 +1,21 @@
-import Link from "next/link";
+// import Link from "next/link";
+import Image from "next/image";
 
 export default function Header() {
   return (
-    <nav>
-      <ul className=" flex p-4 space-x-4 items-center m-3" style={{ backgroundColor: "black" }}>
+    <nav className="flex pt-10 px-12 justify-between w-full font-[family-name:var(--font-lexend)] h-25">
+      <div className="flex items-end gap-2">
+        <div className=" relative w-24 h-24">
+          <Image src="/book_2_1.png" alt="logo" fill={true}></Image>
+        </div>
+        <h1 className="font-semibold text-3xl h-fit pb-3">CROWDED<br/>EXAMS</h1>
+      </div>
+      <ul className="flex gap-20">
         <li>
-          <img src="/book_2_1.png" alt="book icon" style={{ width: '200px', height: 'auto',  paddingLeft:'70px'}} />
+          <h1 className="">HOMEPAGE</h1>
         </li>
         <li>
-          <br />
-        </li>
-        <li>
-          <h1 className="font-lexend font-semibold" style={{ fontSize: "48px", width: '70px', lineHeight: "65px"}}>CROWDED EXAMS</h1>
-        </li>
-        <li>
-          <h1 style={{paddingLeft: "600px"}}></h1>
-        </li>
-        <li>
-          <h1 className="font-lexend" style={{ fontSize: "20px",  width: '250px', fontWeight: "300"}}>HOMEPAGE</h1>
-        </li>
-        <li>
-          <h1 className="font-lexend" style={{ fontSize: "20px",  width: '250px', fontWeight: "300"}}>CONTACT US</h1>
-        </li>
-        <li>
-          <h1 className="font-lexend" style={{ fontSize: "20px",  width: '70px', fontWeight: "300"}}>ENQUIRIES</h1>
+          <h1 className="">ENQUIRIES</h1>
         </li>
       </ul>
     </nav>
