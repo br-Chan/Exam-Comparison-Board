@@ -17,8 +17,8 @@ export default function Home() {
           </div>
           <Link href="/login" className="bg-blue-600 w-fit text-xl px-8 py-3 rounded-full">LOGIN </Link>
         </div>
-        <div className="w-80 2xl:w-96 backdrop-blur-md p-6 rounded-xl flex flex-col gap-2">
-          <h2 className=" text-xl 2xl:text-2xl font-bold">What is this?</h2>
+        <div className="w-80 2xl:w-96 backdrop-blur-md p-6 rounded-xl flex flex-col gap-2" >
+          <h2 className=" text-xl 2xl:text-2xl font-bold">What do we do?</h2>
           <p className=" text-md 2xl:text-lg">Our goal is to help students around the world study for their exams, by providing a platform that encourages collaboration to solve previous exams. </p>
         </div>
       </div>
