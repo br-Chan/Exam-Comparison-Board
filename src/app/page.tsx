@@ -6,8 +6,8 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div>
-      <div className="fixed -z-50 right-0 bottom-0 h-full w-1/2">
-        <Image src="/background.png" fill={true} alt="" />
+      <div className="fixed -z-50 left-1/2 bottom-0 h-full w-1/2 ">
+        <Image src="/background.png" fill={true} alt="" className=" object-cover object-left"/>
       </div>
       <div className="h-full w-full flex items-center">
         <div className="flex px-12 flex-col lg:flex-row justify-between gap-10 lg:px-20 xl:px-28 font-[family-name:var(--font-lexend)] w-full">
