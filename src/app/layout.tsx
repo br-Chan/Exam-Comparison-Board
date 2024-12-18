@@ -35,7 +35,7 @@ export default function RootLayout({
       <body
         className={`${lexend.variable} ${lexend.variable} antialiased`}
       >
-        <div className=" grid grid-rows-[auto_1fr] h-screen">
+        <div className=" grid grid-rows-[auto_1fr] h-screen px-primary">
           <Header />
           {children}
         </div>
