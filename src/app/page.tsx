@@ -10,7 +10,7 @@ export default function Home() {
       <div className="fixed -z-50 left-1/2 bottom-0 h-full w-1/2 ">
         <Image src="/background.png" fill={true} alt="" className=" object-cover object-left"/>
       </div>
-      <Header logo />
+      <Header logo fixed />
       <div className="h-full w-full flex items-center">
         <div className="flex flex-col lg:flex-row justify-between gap-10 font-[family-name:var(--font-lexend)] w-full">
           <div className="flex flex-col gap-10">
