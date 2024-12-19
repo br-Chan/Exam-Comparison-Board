@@ -3,6 +3,9 @@
 import Image from "next/image";
 import Card from "../components/card";
 import Searchbar from "../components/searchbar";
+import Header from "../components/header"
+
+import logo_horizontal from "../../../public/logo_horizontal.png"
 
 export default function Search() {
     return (
@@ -10,8 +13,9 @@ export default function Search() {
             <div className="fixed -z-50 left-0 bottom-0 h-full w-1/5 min-w-44">
                 <Image src="/background_rotated.png" fill={true} alt="" className=" object-cover object-right"/>
             </div>
-            <div className=" flex flex-col font-[family-name:var(--font-lexend)] mx-auto gap-10 md:w-4/6">
-                <h1 className=" text-header2 text-center font-bold mt-24">Search For A Paper</h1>
+            <Header logout />
+            <div className=" flex flex-col font-[family-name:var(--font-lexend)] mx-auto gap-5 md:gap-10 md:w-4/6">
+                <Image src={logo_horizontal} alt="crowded exams" sizes="100vw" className=" w-5/6 md:w-4/6 h-auto mx-auto mb-3"/>
                 <Searchbar placeholder="Enter paper here..." callback={(value) => console.log(value)} /> 
                 <div className=" flex flex-col gap-5">
                     <h2 className=" text-xl pl-5">Recents</h2>

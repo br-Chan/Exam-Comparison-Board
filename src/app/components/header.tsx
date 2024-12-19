@@ -1,33 +1,21 @@
 import Link from "next/link";
 import Image from "next/image";
 
-export default function Header() {
+export default function Header({ logo, logout}: {logo?: boolean, logout?: boolean}) {
   return (
     <nav className="flex pt-10 justify-between w-full font-[family-name:var(--font-lexend)] h-25">
-      <div className="flex items-end gap-2">
         <div className="relative w-36 h-32">
+          {logo && 
           <Link href="/">
             <Image src="/logos.png" alt="logo" fill={true}></Image>
-          </Link>
+          </Link>}
         </div>
-      </div>
-      {/* <ul className="flex gap-20"> */}
-      {/*   <li> */}
-      {/*     <Link href="/search"> */}
-      {/*       <h1 className="">SEARCH</h1> */}
-      {/*     </Link> */}
-      {/*   </li> */}
-      {/*   <li> */}
-      {/*     <Link href="/homepage"> */}
-      {/*       <h1 className="">HOMEPAGE</h1> */}
-      {/*     </Link> */}
-      {/*   </li> */}
-      {/*   <li> */}
-      {/*     <Link href="/enquiries"> */}
-      {/*       <h1 className="">ENQUIRIES</h1> */}
-      {/*     </Link> */}
-      {/*   </li> */}
-      {/* </ul> */}
+        {logout && 
+        <div className=" border-b-2 border-white h-fit p-2 md:p-3">
+          <span className=" font-light text-sm md:text-xl">LOG OUT</span>
+        </div>
+      }
+        
     </nav>
   );
 }
