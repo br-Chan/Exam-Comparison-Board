@@ -14,7 +14,7 @@ export default function Searchbar({ placeholder, callback, className }: { placeh
 
     return (
         <div className={` rounded-full h-12 border-white border-2 flex px-5 gap-4 ${className}`}>
-            <Image src="/magnifying.svg" className=" dark:invert" alt="search" width="24" height="24"/>
+            <Image src="/magnifying.svg" className="white-filter" alt="search" width="24" height="24"/>
             <input type="text" placeholder={placeholder} value={value} onChange={handleChange} onKeyDown={handleEnter} className="flex-grow outline-none bg-transparent text-base font-light"/>
         </div>
     )
