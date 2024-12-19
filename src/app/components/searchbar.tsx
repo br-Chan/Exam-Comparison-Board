@@ -1,7 +1,7 @@
 import { ChangeEvent, KeyboardEvent, useState } from "react";
 import Image from "next/image"
 
-export default function Searchbar({ placeholder, callback, className }: { placeholder: string, callback: ( value: string ) => any, className: string }) {
+export default function Searchbar({ placeholder, callback, className }: { placeholder: string, callback: ( value: string ) => unknown, className: string }) {
     const [value, setValue] = useState("");
 
     const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
