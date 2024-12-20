@@ -15,8 +15,7 @@ const compat = new FlatCompat({
     allConfig: js.configs.all
 });
 
-/** @type {import('eslint').Linter.Config[]} */
-export default [
+const eslintConfig = [
     {files: ["**/*.{js,mjs,cjs,ts,jsx,tsx}"]},
     {languageOptions: { globals: globals.browser }},
     pluginJs.configs.recommended,
@@ -24,4 +23,7 @@ export default [
     pluginReact.configs.flat.recommended,
     ...compat.config({
     extends: ['next', 'next/core-web-vitals', 'next/typescript', 'prettier'],
-  }),];
+  }),]
+
+/** @type {import('eslint').Linter.Config[]} */
+export default eslintConfig;
