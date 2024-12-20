@@ -23,5 +23,5 @@ export default [
     ...tseslint.configs.recommended,
     pluginReact.configs.flat.recommended,
     ...compat.config({
-    extends: ['next/core-web-vitals', 'next/typescript'],
+    extends: ['next', 'next/core-web-vitals', 'next/typescript', 'prettier'],
   }),];
