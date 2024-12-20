@@ -14,9 +14,9 @@ Then, run the development server:
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result. The page auto-updates as you edit the file.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result. The page auto-updates as you edit files.
 
-ESLint and Prettier have been configured  - see eslint.config.mjs and .prettierrc respectively. The following scripts can be used to run them easily:
+ESLint and Prettier have been configured - see eslint.config.mjs and .prettierrc respectively. The following scripts can be used to run them easily:
 
 ```bash
 npm run lint
