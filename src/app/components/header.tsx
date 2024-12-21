@@ -14,7 +14,7 @@ export default function Header({
 }) {
   return (
     <nav
-      className={`mt-10 flex w-full items-center justify-between font-[family-name:var(--font-lexend)] ${fixed ? "h-36" : "h-11 md:h-16"}`}
+      className={`mt-10 flex items-center justify-between font-[family-name:var(--font-lexend)] ${fixed ? "h-36" : "h-11 md:h-16"}`}
     >
       <div className="relative h-full w-auto">
         {logo && (
