@@ -1,7 +1,6 @@
-import AnswerCard from "../components/answer_card";
-import Header from "../components/header";
+import AnswerCard from "./answer_card";
 
-function QuestionRow() {
+export default function QuestionRow() {
   return (
     <div className="border-t-2 border-white py-4">
       <div className="flex items-center justify-between">
@@ -35,22 +34,5 @@ function QuestionRow() {
         </div>
       </div>
     </div>
-  );
-}
-
-export default function Exam() {
-  return (
-    <>
-      <Header logo logout />
-      <div>
-        <div>
-          <h1 className="mb-5 text-2xl font-bold">PAPER001 Semester 2 2077</h1>
-        </div>
-        <QuestionRow />
-        <QuestionRow />
-        <QuestionRow />
-        <QuestionRow />
-      </div>
-    </>
   );
 }
