@@ -35,9 +35,9 @@ export default function Header({
       </div>
       {logout && (
         <div className=" border-b-2 border-white h-fit p-1 md:p-2">
-          <a href="/api/auth/logout">
+          <Link href="/api/auth/logout">
             <span className=" font-light text-sm md:text-lg">LOG OUT</span>
-          </a>
+          </Link>
         </div>
       )}
     </nav>
