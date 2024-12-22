@@ -17,18 +17,16 @@ export default function Header({
   logout = user ? true : false;
   return (
     <nav
-      className={` flex mt-10 justify-between w-full font-[family-name:var(--font-lexend)] items-center ${
-        fixed ? "h-36" : "h-11 md:h-16"
-      }`}
+      className={`mt-10 flex w-full items-center justify-between font-[family-name:var(--font-lexend)] ${fixed ? "h-36" : "h-11 md:h-16"}`}
     >
-      <div className="relative w-auto h-full">
+      <div className="relative h-full w-auto">
         {logo && (
           <Link href="/">
             <Image
               src={logoSquare}
               alt="logo"
               sizes="100vw"
-              className=" h-full w-auto"
+              className="h-full w-auto"
             />
           </Link>
         )}

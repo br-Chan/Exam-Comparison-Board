@@ -5,19 +5,19 @@ import Header from "./components/header";
 export default function Home() {
   return (
     <>
-      <div className="fixed -z-50 left-1/2 bottom-0 h-full w-1/2 ">
+      <div className="fixed bottom-0 left-1/2 -z-50 h-full w-1/2">
         <Image
           src="/background.png"
           fill={true}
           alt=""
-          className=" object-cover object-left"
+          className="object-cover object-left"
         />
       </div>
       <Header logo fixed />
-      <div className="h-full w-full flex items-center">
-        <div className="flex flex-col lg:flex-row justify-between gap-10 font-[family-name:var(--font-lexend)] w-full">
+      <div className="flex h-full w-full items-center">
+        <div className="flex w-full flex-col justify-between gap-10 font-[family-name:var(--font-lexend)] lg:flex-row">
           <div className="flex flex-col gap-10">
-            <div className="text-header leading-none font-bold">
+            <div className="text-header font-bold leading-none">
               <h1>Welcome.</h1>
             </div>
             <a
