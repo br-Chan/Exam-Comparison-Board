@@ -22,8 +22,8 @@ export const papers: Paper[] = [
   },
   {
     id: "3",
-    course: "COMPSCI 220",
-    semester: Semester.ONE,
+    course: "ACORN 230",
+    semester: Semester.SUMMER,
     year: 2024,
   },
   {
@@ -32,4 +32,40 @@ export const papers: Paper[] = [
     semester: Semester.TWO,
     year: 2024,
   },
+  {
+    id: "5",
+    course: "COMPSCI 230",
+    semester: Semester.ONE,
+    year: 2023,
+  },
+  {
+    id: "6",
+    course: "PEANUT 370",
+    semester: Semester.SUMMER,
+    year: 2023,
+  },
+  {
+    id: "7",
+    course: "COMPSCI 320",
+    semester: Semester.ONE,
+    year: 2024,
+  },
+  {
+    id: "8",
+    course: "SOFTENG 701",
+    semester: Semester.TWO,
+    year: 2024,
+  },
+  {
+    id: "9",
+    course: "COMPSCI 750",
+    semester: Semester.ONE,
+    year: 2023,
+  },
+  {
+    id: "10",
+    course: "SOFTENG 761",
+    semester: Semester.TWO,
+    year: 2024,
+  }
 ];
