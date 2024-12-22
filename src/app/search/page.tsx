@@ -5,10 +5,11 @@ import Image from "next/image";
 import Card from "../components/card";
 import Searchbar from "../components/searchbar";
 import Header from "../components/header";
+import { withPageAuthRequired } from "@auth0/nextjs-auth0/client";
 
 import logo_horizontal from "../../../public/logo_horizontal.png";
 
-export default function Search() {
+export default withPageAuthRequired(function Search() {
   // temp for ui behaviour purposes
   const [searchActive, setSearchActive] = useState(false);
 
@@ -19,22 +20,22 @@ export default function Search() {
 
   return (
     <>
-      <div className="fixed bottom-0 left-0 -z-50 h-full w-1/5 min-w-44">
+      <div className="fixed -z-50 left-0 bottom-0 h-full w-1/5 min-w-44">
         <Image
           src="/background_rotated.png"
           fill={true}
           alt=""
-          className="object-cover object-right"
+          className=" object-cover object-right"
         />
       </div>
       <Header logout logo={searchActive} />
-      <div className="mx-auto flex flex-col gap-5 font-[family-name:var(--font-lexend)] md:w-4/6">
+      <div className=" flex flex-col font-[family-name:var(--font-lexend)] mx-auto gap-5 md:w-4/6">
         {!searchActive && (
           <Image
             src={logo_horizontal}
             alt="crowded exams"
             sizes="100vw"
-            className="mx-auto mb-3 mt-[12vh] h-auto w-5/6 md:w-4/6"
+            className=" w-5/6 md:w-4/6 h-auto mx-auto mb-3 mt-[12vh]"
           />
         )}
         <Searchbar
@@ -42,11 +43,11 @@ export default function Search() {
           callback={handleSearch}
           className={searchActive ? "md:mt-[-4.5rem]" : ""}
         />
-        <div className="flex flex-col gap-5">
-          <h2 className="pl-5 text-xl">
+        <div className=" flex flex-col gap-5">
+          <h2 className=" text-xl pl-5">
             {searchActive ? "Results" : "Recents"}
           </h2>
-          <div className="grid grid-cols-[repeat(auto-fit,minmax(19rem,1fr))] gap-4">
+          <div className=" grid grid-cols-[repeat(auto-fit,minmax(19rem,1fr))] gap-4">
             {/** Placeholder */}
             <Card
               title="PAPER 001"
@@ -77,4 +78,4 @@ export default function Search() {
       </div>
     </>
   );
-}
+});

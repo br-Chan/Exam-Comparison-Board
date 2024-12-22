@@ -1,6 +1,4 @@
 "use client";
-
-import Link from "next/link";
 import Image from "next/image";
 import Header from "./components/header";
 
@@ -22,9 +20,9 @@ export default function Home() {
             <div className="text-header font-bold leading-none">
               <h1>Welcome.</h1>
             </div>
-            <Link
-              href="/login"
-              className="flex w-fit gap-2 rounded-full bg-blue px-8 py-3 text-xl"
+            <a
+              href={`/api/auth/login?returnTo=search`}
+              className="bg-blue w-fit text-xl px-8 py-3 rounded-full flex gap-2"
             >
               <span>LOGIN</span>
               <Image
@@ -34,12 +32,12 @@ export default function Home() {
                 alt="redirect icon"
                 className=" "
               />
-            </Link>
+            </a>
           </div>
-          <div className="flex lg:w-2/5 lg:justify-center">
-            <div className="flex max-w-80 flex-col gap-2 rounded-xl lg:p-6 lg:backdrop-blur-md">
-              <h2 className="text-xl font-bold">What do we do?</h2>
-              <p className="text-md">
+          <div className=" flex lg:w-2/5 lg:justify-center">
+            <div className="max-w-80 lg:backdrop-blur-md lg:p-6 rounded-xl flex flex-col gap-2">
+              <h2 className=" text-xl font-bold">What do we do?</h2>
+              <p className=" text-md">
                 Our goal is to help students around the world study for their
                 exams, by providing a platform that encourages collaboration to
                 solve previous exams.{" "}
@@ -51,3 +49,4 @@ export default function Home() {
     </>
   );
 }
+//junk to test deployment
