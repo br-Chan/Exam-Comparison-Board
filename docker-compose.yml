@@ -5,3 +5,15 @@ services:
       - 3000:3000
     environment:
       VAR: val
+
+  db:
+    image: postgres
+    volumes:
+      - ./database:/var/lib/postgresql/data
+    restart: always
+    # set shared memory limit when using docker-compose
+    shm_size: 128mb
+    environment:
+      POSTGRES_USER: exams
+      POSTGRES_PASSWORD: changeme
+      POSTGRES_DB: exams
